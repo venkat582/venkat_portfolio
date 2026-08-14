@@ -26,11 +26,11 @@ function Navbar() {
           <li className="cursor-pointer hover:text-cyan-400 transition">
             <a href="#projects">Projects</a>
           </li>
-
+          
           <li className="cursor-pointer hover:text-cyan-400 transition">
             <a href="#services">Services</a>
           </li>
-
+          
           <li className="cursor-pointer hover:text-cyan-400 transition">
             <a href="#contact">Contact</a>
           </li>

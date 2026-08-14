@@ -1,4 +1,5 @@
 import { useState } from "react";
+import profile from "../data/profile";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -81,7 +82,7 @@ function Contact() {
 
             {/* Email */}
             <a
-              href="mailto:your-email@gmail.com"
+              href={`mailto:${profile.email}`}
               className="flex items-center gap-5 bg-slate-900 border border-slate-800 rounded-2xl p-5 mb-4 hover:border-cyan-400 transition-all duration-300"
             >
 
@@ -104,7 +105,7 @@ function Contact() {
 
             {/* GitHub */}
             <a
-              href="https://github.com/"
+              href={profile.github}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-5 bg-slate-900 border border-slate-800 rounded-2xl p-5 mb-4 hover:border-cyan-400 transition-all duration-300"
@@ -129,7 +130,7 @@ function Contact() {
 
             {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com/"
+              href={profile.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-5 bg-slate-900 border border-slate-800 rounded-2xl p-5 hover:border-cyan-400 transition-all duration-300"
