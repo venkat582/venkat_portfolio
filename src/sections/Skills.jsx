@@ -3,7 +3,9 @@ import SkillCard from "../components/SkillCard";
 
 function Skills() {
   return (
-    <section className="bg-slate-900 text-white py-24">
+    <section 
+    id="skills"
+    className="bg-slate-900 text-white py-24">
 
       <div className="max-w-7xl mx-auto px-8">
 

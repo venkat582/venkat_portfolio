@@ -3,7 +3,9 @@ import profile from "../assets/images/profile.png";
 
 function Hero() {
   return (
-    <section className="min-h-screen bg-slate-950 text-white flex items-center">
+    <section  
+    id="home"
+    className="min-h-screen bg-slate-950 text-white flex items-center">
       <div className="max-w-7xl mx-auto px-8 w-full">
 
         <div className="grid md:grid-cols-2 gap-10 items-center">

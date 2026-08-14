@@ -12,28 +12,30 @@ function Navbar() {
         <ul className="hidden md:flex gap-8 text-white font-medium">
 
           <li className="cursor-pointer hover:text-cyan-400 transition">
-            Home
+            <a href="#home">Home</a>
           </li>
 
           <li className="cursor-pointer hover:text-cyan-400 transition">
-            About
+            <a href="#about">About</a>
           </li>
 
           <li className="cursor-pointer hover:text-cyan-400 transition">
-            Skills
+            <a href="#skills">Skills</a>
           </li>
 
           <li className="cursor-pointer hover:text-cyan-400 transition">
-            Projects
+            <a href="#projects">Projects</a>
           </li>
 
           <li className="cursor-pointer hover:text-cyan-400 transition">
-            Contact
+            <a href="#services">Services</a>
           </li>
 
           <li className="cursor-pointer hover:text-cyan-400 transition">
-            Services
+            <a href="#contact">Contact</a>
           </li>
+
+          
 
         </ul>
 
