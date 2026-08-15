@@ -1,4 +1,5 @@
 import profile from "../data/profile";
+import ScrollReveal from "../components/ScrollReveal";
 
 function About() {
   return (
@@ -133,18 +134,6 @@ function About() {
         </div>
 
 
-        {/* Resume Button */}
-        <div className="text-center mt-16">
-
-          <a
-            href={profile.resume}
-            download
-            className="inline-block px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105"
-          >
-            📄 Download Resume
-          </a>
-
-        </div>
 
       </div>
     </section>

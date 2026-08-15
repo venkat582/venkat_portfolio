@@ -15,9 +15,6 @@ function Navbar() {
             <a href="#home">Home</a>
           </li>
 
-          <li className="cursor-pointer hover:text-cyan-400 transition">
-            <a href="#about">About</a>
-          </li>
 
           <li className="cursor-pointer hover:text-cyan-400 transition">
             <a href="#skills">Skills</a>
@@ -30,6 +27,11 @@ function Navbar() {
           <li className="cursor-pointer hover:text-cyan-400 transition">
             <a href="#services">Services</a>
           </li>
+
+          
+          <li className="cursor-pointer hover:text-cyan-400 transition">
+            <a href="#about">About</a>
+          </li>
           
           <li className="cursor-pointer hover:text-cyan-400 transition">
             <a href="#contact">Contact</a>
@@ -39,10 +41,13 @@ function Navbar() {
 
         </ul>
 
-        {/* Hire Button */}
-        <button className="bg-purple-500 hover:bg-purple-600 text-white px-5 py-2 rounded-xl transition">
-          Hire Me
-        </button>
+        {/* Download Resume Button */}
+        <a
+                href="/resume.pdf"
+                download
+                className="border border-cyan-400 text-cyan-400 px-8 py-3 rounded-xl hover:bg-cyan-500 hover:text-white transition">
+                Download Resume
+                </a>
 
       </div>
     </nav>

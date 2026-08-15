@@ -1,6 +1,7 @@
 import TypingText from "../components/TypingText";
 import profile from "../assets/images/profile.png";
 
+
 function Hero() {
   return (
     <section  
@@ -26,22 +27,6 @@ function Hero() {
               and AI-powered solutions that solve real-world problems.
             </p>
 
-            <div className="mt-10 flex gap-5">
-
-              <button className="bg-green-500 hover:bg-green-600 px-8 py-3 rounded-xl transition">
-                Hire Me
-              </button>
-
-              
-                <a
-                href="/resume.pdf"
-                download
-                className="border border-cyan-400 text-cyan-400 px-8 py-3 rounded-xl hover:bg-cyan-500 hover:text-white transition">
-                Download Resume
-                </a>
-            
-
-            </div>
 
           </div>
 
@@ -63,6 +48,8 @@ function Hero() {
           </div>
 
           </div>
+
+          
 
         </div>
 

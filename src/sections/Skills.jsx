@@ -1,6 +1,7 @@
 import skills from "../data/skills";
 import SkillCard from "../components/SkillCard";
 
+
 function Skills() {
   return (
     <section 
