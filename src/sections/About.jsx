@@ -10,130 +10,156 @@ function About() {
       <div className="max-w-6xl mx-auto">
 
         {/* Section Heading */}
-        <div className="text-center mb-16">
+        <ScrollReveal direction="up">
 
-          <p className="text-cyan-400 text-lg font-medium mb-3">
-            Get To Know Me
-          </p>
+          <div className="text-center mb-16">
 
-          <h2 className="text-4xl md:text-5xl font-bold">
-            About Me
-          </h2>
+            <p className="text-cyan-400 text-lg font-medium mb-3">
+              Get To Know Me
+            </p>
 
-          <div className="w-20 h-1 bg-cyan-400 mx-auto mt-5 rounded-full"></div>
+            <h2 className="text-4xl md:text-5xl font-bold">
+              About Me
+            </h2>
 
-        </div>
+            <div className="w-20 h-1 bg-cyan-400 mx-auto mt-5 rounded-full"></div>
+
+          </div>
+
+        </ScrollReveal>
 
 
         {/* Main Content */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
-          {/* Left Side */}
-          <div>
+          {/* LEFT SIDE */}
+          <ScrollReveal direction="left">
 
-            <h3 className="text-3xl font-bold mb-6">
-              I'm <span className="text-cyan-400">Venkat Kotaru</span> 👋
-            </h3>
+            <div>
 
-            <p className="text-gray-300 text-lg leading-8 mb-5">
-              I'm a Computer Science Engineering student and aspiring
-              Full Stack Developer who enjoys building modern websites,
-              web applications, and AI-powered solutions.
-            </p>
+              <h3 className="text-3xl font-bold mb-6">
+                I'm{" "}
+                <span className="text-cyan-400">
+                  Venkat Kotaru
+                </span>{" "}
+                👋
+              </h3>
 
-            <p className="text-gray-400 text-lg leading-8 mb-5">
-              I enjoy learning new technologies and turning ideas into
-              practical projects that solve real-world problems.
-            </p>
+              <p className="text-gray-300 text-lg leading-8 mb-5">
+                I'm a Computer Science Engineering student and aspiring
+                Full Stack Developer who enjoys building modern websites,
+                web applications, and AI-powered solutions.
+              </p>
 
-            <p className="text-gray-400 text-lg leading-8">
-              I'm currently looking for opportunities to work with
-              startups, companies, and clients where I can contribute,
-              learn, and grow as a developer.
-            </p>
+              <p className="text-gray-400 text-lg leading-8 mb-5">
+                I enjoy learning new technologies and turning ideas into
+                practical projects that solve real-world problems.
+              </p>
 
-          </div>
+              <p className="text-gray-400 text-lg leading-8">
+                I'm currently looking for opportunities to work with
+                startups, companies, and clients where I can contribute,
+                learn, and grow as a developer.
+              </p>
+
+            </div>
+
+          </ScrollReveal>
 
 
-          {/* Right Side */}
+          {/* RIGHT SIDE */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
 
             {/* Education */}
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-cyan-400 hover:-translate-y-2 transition-all duration-300">
+            <ScrollReveal direction="right" delay={100}>
 
-              <div className="text-4xl mb-4">
-                🎓
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-cyan-400 hover:-translate-y-2 transition-all duration-300">
+
+                <div className="text-4xl mb-4">
+                  🎓
+                </div>
+
+                <h4 className="text-xl font-bold mb-2">
+                  Education
+                </h4>
+
+                <p className="text-gray-400">
+                  B.Tech in Computer Science Engineering
+                </p>
+
               </div>
 
-              <h4 className="text-xl font-bold mb-2">
-                Education
-              </h4>
-
-              <p className="text-gray-400">
-                B.Tech in Computer Science Engineering
-              </p>
-
-            </div>
+            </ScrollReveal>
 
 
             {/* Development */}
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-cyan-400 hover:-translate-y-2 transition-all duration-300">
+            <ScrollReveal direction="right" delay={200}>
 
-              <div className="text-4xl mb-4">
-                💻
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-cyan-400 hover:-translate-y-2 transition-all duration-300">
+
+                <div className="text-4xl mb-4">
+                  💻
+                </div>
+
+                <h4 className="text-xl font-bold mb-2">
+                  Development
+                </h4>
+
+                <p className="text-gray-400">
+                  Full Stack Web Development
+                </p>
+
               </div>
 
-              <h4 className="text-xl font-bold mb-2">
-                Development
-              </h4>
-
-              <p className="text-gray-400">
-                Full Stack Web Development
-              </p>
-
-            </div>
+            </ScrollReveal>
 
 
             {/* AI */}
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-cyan-400 hover:-translate-y-2 transition-all duration-300">
+            <ScrollReveal direction="right" delay={300}>
 
-              <div className="text-4xl mb-4">
-                🤖
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-cyan-400 hover:-translate-y-2 transition-all duration-300">
+
+                <div className="text-4xl mb-4">
+                  🤖
+                </div>
+
+                <h4 className="text-xl font-bold mb-2">
+                  AI Enthusiast
+                </h4>
+
+                <p className="text-gray-400">
+                  Interested in AI and intelligent applications
+                </p>
+
               </div>
 
-              <h4 className="text-xl font-bold mb-2">
-                AI Enthusiast
-              </h4>
-
-              <p className="text-gray-400">
-                Interested in AI and intelligent applications
-              </p>
-
-            </div>
+            </ScrollReveal>
 
 
             {/* Freelancing */}
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-cyan-400 hover:-translate-y-2 transition-all duration-300">
+            <ScrollReveal direction="right" delay={400}>
 
-              <div className="text-4xl mb-4">
-                🚀
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-cyan-400 hover:-translate-y-2 transition-all duration-300">
+
+                <div className="text-4xl mb-4">
+                  🚀
+                </div>
+
+                <h4 className="text-xl font-bold mb-2">
+                  Freelancing
+                </h4>
+
+                <p className="text-gray-400">
+                  Available for projects and collaborations
+                </p>
+
               </div>
 
-              <h4 className="text-xl font-bold mb-2">
-                Freelancing
-              </h4>
-
-              <p className="text-gray-400">
-                Available for projects and collaborations
-              </p>
-
-            </div>
+            </ScrollReveal>
 
           </div>
 
         </div>
-
-
 
       </div>
     </section>

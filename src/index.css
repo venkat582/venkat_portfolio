@@ -1,40 +1,8 @@
 @import "tailwindcss";
+
 html {
   scroll-behavior: smooth;
 }
 
-/* ============================= */
-/* SCROLL REVEAL ANIMATIONS */
-/* ============================= */
+/* SCROLL REVEAL */
 
-.scroll-hidden {
-  opacity: 0;
-  transition:
-    opacity 0.8s ease,
-    transform 0.8s ease;
-}
-
-.scroll-show {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-/* From bottom */
-.scroll-up {
-  transform: translateY(80px);
-}
-
-/* From left */
-.scroll-left {
-  transform: translateX(-100px);
-}
-
-/* From right */
-.scroll-right {
-  transform: translateX(100px);
-}
-
-/* From top */
-.scroll-down {
-  transform: translateY(-80px);
-}

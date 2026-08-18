@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function ScrollReveal({
   children,
@@ -6,36 +6,62 @@ function ScrollReveal({
   delay = 0,
   className = "",
 }) {
-  const elementRef = useRef(null);
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const element = elementRef.current;
-
-    if (!element) return;
-
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          element.classList.add("scroll-show");
+          setVisible(true);
         } else {
-          element.classList.remove("scroll-show");
+          setVisible(false);
         }
       },
       {
-        threshold: 0.15,
+        threshold: 0.2,
       }
     );
 
-    observer.observe(element);
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
 
-    return () => observer.disconnect();
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
   }, []);
+
+  const getTransform = () => {
+    if (visible) {
+      return "translate(0, 0)";
+    }
+
+    if (direction === "left") {
+      return "translateX(-120px)";
+    }
+
+    if (direction === "right") {
+      return "translateX(120px)";
+    }
+
+    if (direction === "down") {
+      return "translateY(-100px)";
+    }
+
+    return "translateY(100px)";
+  };
 
   return (
     <div
-      ref={elementRef}
-      className={`scroll-hidden scroll-${direction} ${className}`}
+      ref={ref}
+      className={className}
       style={{
+        opacity: visible ? 1 : 0,
+        transform: getTransform(),
+        transition: "opacity 1s ease, transform 1s ease",
         transitionDelay: `${delay}ms`,
       }}
     >
