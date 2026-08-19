@@ -1,5 +1,6 @@
 import projects from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
+import ScrollReveal from "../components/ScrollReveal";
 
 function Projects() {
   return (
@@ -32,12 +33,22 @@ function Projects() {
         {/* Project Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          {projects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-            />
-          ))}
+
+          {projects.map((project, index) => (
+  <ScrollReveal
+    key={project.id}
+    direction={
+      index % 3 === 0
+        ? "left"
+        : index % 3 === 1
+        ? "up"
+        : "right"
+    }
+    delay={index * 150}
+  >
+  <ProjectCard project={project} />
+  </ScrollReveal>
+))}
 
         </div>
 

@@ -1,3 +1,5 @@
+import ScrollReveal from "../components/ScrollReveal";
+
 const services = [
   {
     icon: "🌐",
@@ -112,7 +114,17 @@ function Services() {
         {/* Services Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
 
-          {services.map((service) => (
+
+            {services.map((service, index) => (
+
+  <ScrollReveal
+    key={service.title}
+    direction={index % 2 === 0 ? "left" : "right"}
+    delay={index * 150}
+  >
+
+  
+            
 
             <div
               key={service.title}
@@ -164,6 +176,7 @@ function Services() {
               </ul>
 
             </div>
+            </ScrollReveal>
 
           ))}
 
